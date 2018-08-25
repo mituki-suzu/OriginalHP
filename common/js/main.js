@@ -6,7 +6,9 @@ $(document).ready(function(){
 		//自動再生するか
 		autoplay: true,
 		//自動再生の切り替え時間(ms)
-		autoplaySpeed: 3000,
+		autoplaySpeed: 2000,
+		// 自動再生や左右の矢印でスライドするスピード
+		speed: 3000,
 		//画像下のドットを表示
 		dots: true,
 		//切り替え時のフェードイン
@@ -16,11 +18,4 @@ $(document).ready(function(){
 		//マウスオーバー時スクロールを止めるかどうか
 		pauseOnHover: true,
 	});
-
-	$('.slick-next').on('click', function () {
-        slick.slickNext();
-    });
-    $('.slick-prev').on('click', function () {
-        slick.slickPrev();
-    });
 });

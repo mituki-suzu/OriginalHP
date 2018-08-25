@@ -54,10 +54,56 @@ body{
 	width: 980px;
 }
 
-#pageBodyTop .slideshow{
-	text-align: center;
-	margin-bottom: 10px;
+
+/*ここからスライドショー*/
+
+#pageBodyTop .slider {
+	margin: 0 auto;
+	padding: 0px;
+	width: 80%;
+	color: #333;
+	position:relative;
 }
+
+#pageBodyTop .slider .slick-slide {
+	text-align: center;
+}
+
+#pageBodyTop .single-item{
+	padding: 0;
+	margin: 0;
+}
+
+#pageBodyTop .slick-prev, .slick-next {
+    width:20px; /* 画像幅 */
+    height:20px; /* 画像高さ */
+}
+
+#pageBodyTop .slick-prev img{
+	width:20px; /* 画像幅 */
+    height:20px;/* 画像高さ */
+}
+
+#pageBodyTop .slick-next img{
+	width:20px; /* 画像幅 */
+    height:20px;/* 画像高さ */
+}
+
+#pageBodyTop .slick-prev:before, .slick-next:before {
+    content:"";
+}
+
+#pageBodyTop button.slick-prev, button.slick-next {
+    z-index:2;
+}
+
+#pageBodyTop .slick-prev{left:-22px;}
+
+#pageBodyTop .slick-next{right:-20px;}
+
+#pageBodyTop .slick-arrow{z-index:10;/* 値は適当に */}
+
+/*ここからメインページ*/
 
 #pageBodyMain{
 	width: 780px;
@@ -90,7 +136,7 @@ body{
 	font-size: 14px;
 }
 
-
+/*ここからメインページ右*/
 #pageBodyRight{
 	width: 195px;
 	float: right;
@@ -109,6 +155,10 @@ body{
 
 #pageBodyRight .banner ul li:first-child{
 	margin-top: 10px;
+}
+
+#pageBodyRight .banner ul li img{
+	border: 1.5px solid #1E90FF;
 }
 
 #pageBody:after{
